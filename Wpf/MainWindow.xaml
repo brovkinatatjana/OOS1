@@ -12,5 +12,6 @@
         <ListBox Height="259" HorizontalAlignment="Left" Margin="227,28,0,0" Name="lbMain" VerticalAlignment="Top" Width="243" />
         <Label Content="Результат" Height="29" HorizontalAlignment="Left" Margin="318,0,0,0" Name="label2" VerticalAlignment="Top" Width="130" />
         <Button Content="Задание 1" Height="28" HorizontalAlignment="Left" Margin="14,114,0,0" Name="button5" VerticalAlignment="Top" Width="86" Click="button5_Click" />
+        <Button Content="Задание 2" Height="28" HorizontalAlignment="Left" Margin="107,114,0,0" Name="button6" VerticalAlignment="Top" Width="86" Click="button6_Click" />
     </Grid>
 </Window>
