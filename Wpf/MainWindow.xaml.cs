@@ -256,5 +256,33 @@ namespace Wpf
                 lbMain.Items.Add(ar1[index]);
             }
         }
+
+
+        private void button11_Click(object sender, RoutedEventArgs e)
+        {
+            ArrayList myAL = new ArrayList();
+            int index;
+            int itemCount = Convert.ToInt32(tbN.Text);
+            Random rnd1 = new Random();
+            int number;
+            lbMain.Items.Clear();
+            for (index = 1; index <= itemCount; index++)
+            {
+                number = -100 + rnd1.Next(200);
+                myAL.Add(number);
+                lbMain.Items.Add(number);
+            }
+
+            int sum = 0;
+            int[] ar1 = new Int32[itemCount];
+            myAL.CopyTo(ar1);
+            for (index = 0; index < itemCount; index++)
+            {
+                if (ar1[index] % 3 != 0)
+                    sum += ar1[index];
+            }
+            lbMain.Items.Add("Сумма элементов, не кратных 3");
+            lbMain.Items.Add(sum);
+        }
     }
 }
