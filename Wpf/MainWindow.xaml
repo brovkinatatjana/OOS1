@@ -16,5 +16,6 @@
         <Button Content="Задание 3" Height="28" HorizontalAlignment="Left" Margin="15,156,0,0" Name="button7" VerticalAlignment="Top" Width="86" Click="button7_Click" />
         <Button Content="Задание 6" Height="28" HorizontalAlignment="Left" Margin="107,194,0,0" Name="button8" VerticalAlignment="Top" Width="86" Click="button8_Click" />
         <Button Content="Задание 7" Height="28" HorizontalAlignment="Left" Margin="15,234,0,0" Name="button9" VerticalAlignment="Top" Width="86" Click="button9_Click" />
+        <Button Content="Задание 8" Height="28" HorizontalAlignment="Left" Margin="107,234,0,0" Name="button10" VerticalAlignment="Top" Width="86" Click="button10_Click" />
     </Grid>
 </Window>
