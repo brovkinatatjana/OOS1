@@ -174,5 +174,33 @@ namespace Wpf
                 lbMain.Items.Add("Первый элемент больше среднего значения");
 
         }
+
+
+        private void button7_Click(object sender, RoutedEventArgs e)
+        {
+            ArrayList myAL = new ArrayList();
+            int index;
+            int itemCount = Convert.ToInt32(tbN.Text);
+            Random rnd1 = new Random();
+            int number;
+            lbMain.Items.Clear();
+            for (index = 1; index <= itemCount; index++)
+            {
+                number = -100 + rnd1.Next(200);
+                myAL.Add(number);
+                lbMain.Items.Add(number);
+            }
+
+            int tum = 0;
+            int[] ar1 = new Int32[itemCount];
+            myAL.CopyTo(ar1);
+            for (index = 0; index < itemCount - 1; index++)
+            {
+                if (ar1[index] * ar1[index + 1] < 0)
+                    tum++;
+            }
+            lbMain.Items.Add("Знак меняется");
+            lbMain.Items.Add(tum);
+        }
     }
 }
