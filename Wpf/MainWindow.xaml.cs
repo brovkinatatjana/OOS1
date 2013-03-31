@@ -145,6 +145,34 @@ namespace Wpf
                 lbMain.Items.Add("Не существует");
         }
 
+        private void button8_Click(object sender, RoutedEventArgs e)
+        {
+            ArrayList myAL = new ArrayList();
+            int index;
+            int itemCount = Convert.ToInt32(tbN.Text);
+            Random rnd1 = new Random();
+            int number;
+            lbMain.Items.Clear();
+            for (index = 1; index <= itemCount; index++)
+            {
+                number = -100 + rnd1.Next(200);
+                myAL.Add(number);
+                lbMain.Items.Add(number);
+            }
 
+            int sum = 0;
+            int[] ar1 = new Int32[itemCount];
+            myAL.CopyTo(ar1);
+            for (index = 0; index < itemCount - 1; index++)
+            {
+                sum += ar1[index];
+            }
+            sum = sum / itemCount;
+            if (sum > ar1[0])
+                lbMain.Items.Add("Первый элемент меньше среднего значения");
+            else
+                lbMain.Items.Add("Первый элемент больше среднего значения");
+
+        }
     }
 }
