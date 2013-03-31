@@ -314,5 +314,40 @@ namespace Wpf
                 lbMain.Items.Add(sum);
             }
         }
+
+
+        private void button13_Click(object sender, RoutedEventArgs e)
+        {
+            {
+                ArrayList myAL = new ArrayList();
+                int index;
+                int itemCount = Convert.ToInt32(tbN.Text);
+                Random rnd1 = new Random();
+                int number;
+                lbMain.Items.Clear();
+                for (index = 1; index <= itemCount; index++)
+                {
+                    number = -100 + rnd1.Next(200);
+                    myAL.Add(number);
+                    lbMain.Items.Add(number);
+                }
+
+                int min1 = 0, min2 = 0;
+                int[] ar1 = new Int32[itemCount];
+                myAL.CopyTo(ar1);
+                min1 = Math.Abs(ar1[0] - ar1[1]);
+                for (index = 2; index < itemCount; index++)
+                {
+
+                    if (Math.Abs(ar1[index] - ar1[1]) < min1)
+                    {
+                        min1 = Math.Abs(ar1[index] - ar1[1]);
+                        min2 = index;
+                    }
+                }
+                lbMain.Items.Add("Элемент, меньше всего отличающийся от второго");
+                lbMain.Items.Add(min2 + 1);
+            }
+        }
     }
 }
