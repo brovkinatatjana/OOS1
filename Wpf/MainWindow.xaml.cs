@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections;
 using Microsoft.Win32;
+using System.Windows.Controls.DataVisualization.Charting;
 
 namespace Wpf
 {
@@ -226,6 +227,40 @@ namespace Wpf
             }
             lbMain.Items.Add("Сумма элементов меньших 21");
             lbMain.Items.Add(sum);
+        }
+
+        private void button10_Click(object sender, RoutedEventArgs e)
+        {
+
+            ArrayList myAL = new ArrayList();
+            int index;
+            int itemCount = 10;
+            Random rnd1 = new Random();
+            int number;
+            lbMain.Items.Clear();
+            for (index = 1; index <= itemCount; index++)
+            {
+                number = 0 + rnd1.Next(200);
+                myAL.Add(number);
+                lbMain.Items.Add(number);
+            }
+            int[] ar1 = new Int32[itemCount];
+            myAL.CopyTo(ar1);
+            ((ColumnSeries)mcChart.SeriesHost.Series[0]).ItemsSource =
+
+            new KeyValuePair<string, int>[]
+            {
+            new KeyValuePair<string, int>("", ar1[0]),
+            new KeyValuePair<string, int>("", ar1[1]),
+            new KeyValuePair<string, int>("", ar1[2]),
+            new KeyValuePair<string, int>("", ar1[3]),
+            new KeyValuePair<string, int>("", ar1[4]),
+            new KeyValuePair<string, int>("", ar1[5]),
+            new KeyValuePair<string, int>("", ar1[6]),
+            new KeyValuePair<string, int>("", ar1[7]),
+            new KeyValuePair<string, int>("", ar1[8]),
+            new KeyValuePair<string, int>("", ar1[9])
+            };
         }
     }
 }
