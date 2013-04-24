@@ -88,7 +88,7 @@ namespace Wpf
             this.Close();
         }
 
-        private void button5_Click(object sender, RoutedEventArgs e)
+        private void button_1_Click(object sender, RoutedEventArgs e)
         {
             ArrayList myAL = new ArrayList();
             int index;
@@ -115,7 +115,7 @@ namespace Wpf
             lbMain.Items.Add(elem);
         }
 
-        private void button6_Click(object sender, RoutedEventArgs e)
+        private void button_2_Click(object sender, RoutedEventArgs e)
         {
             ArrayList myAL = new ArrayList();
             int index;
@@ -145,7 +145,7 @@ namespace Wpf
                 lbMain.Items.Add("Не существует");
         }
 
-        private void button8_Click(object sender, RoutedEventArgs e)
+        private void button_4_Click(object sender, RoutedEventArgs e)
         {
             ArrayList myAL = new ArrayList();
             int index;
@@ -176,7 +176,7 @@ namespace Wpf
         }
 
 
-        private void button7_Click(object sender, RoutedEventArgs e)
+        private void button_5_Click(object sender, RoutedEventArgs e)
         {
             ArrayList myAL = new ArrayList();
             int index;
