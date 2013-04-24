@@ -20,11 +20,11 @@
         </DVC:Chart>
 
         <Label Content="Результат" Height="29" HorizontalAlignment="Left" Margin="318,0,0,0" Name="label2" VerticalAlignment="Top" Width="130" />
-        <Button Content="Задание 1" Height="28" HorizontalAlignment="Left" Margin="14,114,0,0" Name="button5" VerticalAlignment="Top" Width="86" Click="button5_Click" />
-        <Button Content="Задание 2" Height="28" HorizontalAlignment="Left" Margin="107,114,0,0" Name="button6" VerticalAlignment="Top" Width="86" Click="button6_Click" />
-        <Button Content="Задание 3" Height="28" HorizontalAlignment="Left" Margin="15,156,0,0" Name="button7" VerticalAlignment="Top" Width="86" Click="button7_Click" />
-        <Button Content="Задание 6" Height="28" HorizontalAlignment="Left" Margin="107,194,0,0" Name="button8" VerticalAlignment="Top" Width="86" Click="button8_Click" />
-        <Button Content="Задание 7" Height="28" HorizontalAlignment="Left" Margin="15,234,0,0" Name="button9" VerticalAlignment="Top" Width="86" Click="button9_Click" />
-        <Button Content="Задание 16" Height="28" HorizontalAlignment="Left" Margin="107,418,0,0" Name="button10" VerticalAlignment="Top" Width="86" Click="button10_Click" />
+        <Button Content="Задание 1" Height="28" HorizontalAlignment="Left" Margin="14,114,0,0" Name="button_1" VerticalAlignment="Top" Width="86" Click="button_1_Click" />
+        <Button Content="Задание 2" Height="28" HorizontalAlignment="Left" Margin="107,114,0,0" Name="button_2" VerticalAlignment="Top" Width="86" Click="button_2_Click" />
+        <Button Content="Задание 3" Height="28" HorizontalAlignment="Left" Margin="15,156,0,0" Name="button_3" VerticalAlignment="Top" Width="86" Click="button_3_Click" />
+        <Button Content="Задание 6" Height="28" HorizontalAlignment="Left" Margin="107,194,0,0" Name="button_6" VerticalAlignment="Top" Width="86" Click="button_6_Click" />
+        <Button Content="Задание 7" Height="28" HorizontalAlignment="Left" Margin="15,234,0,0" Name="button_7" VerticalAlignment="Top" Width="86" Click="button_7_Click" />
+        <Button Content="Задание 16" Height="28" HorizontalAlignment="Left" Margin="107,418,0,0" Name="button_16" VerticalAlignment="Top" Width="86" Click="button_16_Click" />
     </Grid>
 </Window>
