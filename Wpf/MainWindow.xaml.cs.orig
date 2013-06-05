@@ -60,6 +60,15 @@ namespace Wpf
             };
         }
 
+
+
+
+
+
+
+
+
+
         private void tbN_Click(object sender, RoutedEventArgs e)
         {
             ArrayList myAL = new ArrayList();
@@ -160,7 +169,7 @@ namespace Wpf
             lbMain.Items.Clear();
             for (index = 1; index <= itemCount; index++)
             {
-                number = -100 + rnd1.Next(200);
+                number = -100 + rnd1.Next(20);
                 myAL.Add(number);
                 lbMain.Items.Add(number);
             }
@@ -180,7 +189,11 @@ namespace Wpf
                 lbMain.Items.Add("Не существует");
         }
 
+<<<<<<< HEAD
         private void button_4_Click(object sender, RoutedEventArgs e)
+=======
+        private void button_3_Click(object sender, RoutedEventArgs e)
+>>>>>>> B3
         {
             ArrayList myAL = new ArrayList();
             int index;
@@ -211,7 +224,11 @@ namespace Wpf
         }
 
 
+<<<<<<< HEAD
         private void button_5_Click(object sender, RoutedEventArgs e)
+=======
+        private void button_6_Click(object sender, RoutedEventArgs e)
+>>>>>>> B3
         {
             ArrayList myAL = new ArrayList();
             int index;
@@ -252,6 +269,16 @@ namespace Wpf
                 myAL.Add(number);
                 lbMain.Items.Add(number);
             }
+            int[] ar1 = new Int32[itemCount];
+            myAL.CopyTo(ar1);
+            for (index = 0; index < itemCount - 1; index++)
+            {
+                if ((ar1[index] < 21))
+                    sum += ar1[index];
+            }
+            lbMain.Items.Add("Сумма элементов меньших 21");
+            lbMain.Items.Add(sum);
+        }
 
             int tum = 0;
             int[] ar1 = new Int32[itemCount];
@@ -284,7 +311,7 @@ namespace Wpf
             int sum = 0;
             int[] ar1 = new Int32[itemCount];
             myAL.CopyTo(ar1);
-            for (index = 0; index < itemCount - 1; index++)
+            for (index = 0; index < itemCount; index++)
             {
                 if ((ar1[index] < 21))
                     sum += ar1[index];
@@ -293,6 +320,11 @@ namespace Wpf
             lbMain.Items.Add(sum);
         }
 
+<<<<<<< HEAD
+       
+
+=======
+>>>>>>> B3
 
         private void button_8_Click(object sender, RoutedEventArgs e)
         {
@@ -445,24 +477,6 @@ namespace Wpf
                 }
                 lbMain.Items.Add("Элементов, кратных 3, ");
                 lbMain.Items.Add(tum);
-            }
-        }
-
-        private void button_3_Click(object sender, RoutedEventArgs e)
-        {
-            SaveFileDialog myDialog = new SaveFileDialog();
-            myDialog.Filter = "Текст(*.TXT)|*.TXT" + "|Все файлы (*.*)|*.* ";
-
-            if (myDialog.ShowDialog() == true)
-            {
-                string filename = myDialog.FileName;
-                using (System.IO.StreamWriter file = new System.IO.StreamWriter(filename, false))
-                {
-                    foreach (Object item in lbMain.Items)
-                    {
-                        file.WriteLine(item);
-                    }
-                }
             }
         }
     }
